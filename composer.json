@@ -1,0 +1,24 @@
+{
+    "name": "jonston/api-client",
+    "description": "api client",
+    "type": "library",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Eugene Buchinsky",
+            "email": "jonston85@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+      "phpunit/phpunit": "^8"
+    },
+    "autoload": {
+      "psr-4": {
+        "APIClient\\": "src/",
+        "APIClient\\Request\\": "src/requests/",
+        "tests\\": "tests/"
+      }
+    }
+}

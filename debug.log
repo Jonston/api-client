@@ -1,0 +1,54 @@
+URL: http://api.gulfbox.ae/transaction/check
+BODY: 
+'{"product":"du-md-25aed","fields":{"customer":"94679548649","account":"94679548649","amount":1},"simulation":true,"auth":{"id":2309,"key":1571712935078,"hash":"f22bb2c520ef397e16a2b9177cc171ff"}}'
+*   Trying 136.243.46.20...
+* TCP_NODELAY set
+* Connected to api.gulfbox.ae (136.243.46.20) port 80 (#0)
+> POST /transaction/check HTTP/1.1
+Host: api.gulfbox.ae
+Accept: */*
+Content-type: application/json
+Content-length: 195
+
+* upload completely sent off: 195 out of 195 bytes
+< HTTP/1.1 200 OK
+< Date: Tue, 22 Oct 2019 02:55:34 GMT
+< Server: Apache
+< Data: Tue, 22 Oct 2019 06:55:34 +0400
+< Content-Length: 102
+< Content-Type: application/json
+< 
+* Connection #0 to host api.gulfbox.ae left intact
+INFO: 
+array (
+  'url' => 'http://api.gulfbox.ae/transaction/check',
+  'content_type' => 'application/json',
+  'http_code' => 200,
+  'header_size' => 164,
+  'request_size' => 319,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 0.188,
+  'namelookup_time' => 1.0E-6,
+  'connect_time' => 0.079,
+  'pretransfer_time' => 0.079,
+  'size_upload' => 195.0,
+  'size_download' => 102.0,
+  'speed_download' => 102.0,
+  'speed_upload' => 195.0,
+  'download_content_length' => 102.0,
+  'upload_content_length' => 195.0,
+  'starttransfer_time' => 0.188,
+  'redirect_time' => 0.0,
+  'redirect_url' => '',
+  'primary_ip' => '136.243.46.20',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 80,
+  'local_ip' => '192.168.0.111',
+  'local_port' => 35468,
+)
+OUTPUT: 
+'{"error":{"code":201,"message":"Incorrect account number","display_error":"Incorrect account number"}}'
